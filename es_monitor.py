@@ -15,7 +15,7 @@ import logging.handlers
 
 LOGGER = logging.getLogger(__name__)
 
-from es_sql import es_query
+from spider_sql import es_query
 
 
 def to_str(val):

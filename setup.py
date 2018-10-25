@@ -8,7 +8,7 @@ VERSION = (2, 0, 0)
 __version__ = VERSION
 __versionstr__ = '.'.join(map(str, VERSION))
 
-f = open(join(dirname(__file__), 'es_sql', 'README.md'))
+f = open(join(dirname(__file__), 'spider_sql', 'README.md'))
 long_description = f.read().strip()
 f.close()
 
@@ -32,7 +32,7 @@ setup(
         author_email = "taowen@gmail.com",
         packages=find_packages(
                 where='.',
-                include=('es_sql*', )
+                include=('spider_sql*', )
         ),
         keywords="sql elasticsearch es",
         classifiers = [
@@ -50,9 +50,9 @@ setup(
         install_requires=install_requires,
         entry_points={
             'console_scripts': [
-                'es-sql = es_sql.__main__:main'
+                'es-sql = spider_sql.__main__:main'
             ]
         },
-        test_suite='es_sql.run_tests.run_all',
+        test_suite='spider_sql.run_tests.run_all',
         tests_require=tests_require,
 )

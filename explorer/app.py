@@ -7,7 +7,7 @@ import traceback
 
 import flask
 
-from es_sql import es_query
+from spider_sql import es_query
 
 app_dir = os.path.dirname(__file__)
 app = flask.Flask(__name__, template_folder=app_dir)

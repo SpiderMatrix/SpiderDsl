@@ -1,0 +1,1 @@
+# sqlparse.parse(sql_select)[0]
